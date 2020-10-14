@@ -1,0 +1,8 @@
+macOS
+4
+Apple
+2980
+Windows
+12
+Toshiba
+4350
