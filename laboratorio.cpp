@@ -18,15 +18,18 @@ void Laboratorio::agregarFinal( const Computadora &c ){
 }
 
 void Laboratorio::mostrar(){
-
+    cout << endl;
+    cout << left;
+    cout << setw(10) << "Sistema";
+    cout << setw(10) << "RAM";
+    cout << setw(10) << "Marca";
+    cout << setw(10) << "Bateria";
+    cout<<endl<<"Operativo"<<endl;
+    cout << endl;
     for ( size_t i = 0 ; i < cont ; i++ ){
 
         Computadora &c = computadoras[i];
-        cout<<endl;
-        cout << "Sistema Operativo: "<< c.getSo() << endl;
-        cout << "RAM: "  << c.getRam() << endl;
-        cout << "Marca: "<< c.getMarca() << endl;
-        cout << "Bateria: " << c.getBateria() << endl;
+        cout<<c;
         cout<<endl;
 
     }
